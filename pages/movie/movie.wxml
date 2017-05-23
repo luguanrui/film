@@ -1,0 +1,35 @@
+<!--pages/movie/movie.wxml-->
+<view class="content">
+
+<!--轮播-->
+    <!--<view class="carousel">
+        <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>-->
+
+    <!--热门电影top20-->
+    <block wx:for = "{{movies}}">
+        <view class="m-list" bindtap="toDetails" id="{{item.id}}">
+            <view class="m-list-pic">
+                <image src="{{item.images.medium}}" mode="scaleToFill"></image>
+            </view>
+            <view class="m-list-intro">
+                <text>名称：{{item.title}} \n 导演：{{item.director}}\n 演员：{{item.cast}}\n 类型：{{item.genre}} \n上映时间：{{item.year}}</text>
+            </view>
+        </view>
+        <view class="hr"></view>
+    </block>
+   
+    
+</view>
+<view>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>

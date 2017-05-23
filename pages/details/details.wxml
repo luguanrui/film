@@ -1,0 +1,33 @@
+<view class="content">
+
+    <view class="movie-pic">
+        <image src="{{movies.images.medium}}"></image>
+    </view>
+
+    <!--概要-->
+    <view class="summary">
+        <text>{{movies.summary}}</text>
+    </view>
+
+    <!--演员剧照-->
+    <view class="casts-title">演员剧照:</view>
+    <view class="casts">
+        <block wx:for="{{casts}}">
+            <view class="cast">
+                <view class="cast-photo">
+                    <image src="{{item.avatars.medium}}"></image>
+                </view>
+                <view class="cast-name">
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+
+</view>
+
+<view>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>

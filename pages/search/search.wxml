@@ -1,0 +1,33 @@
+<view class="content">
+
+<!--搜索-->
+    <view class="search-parent">
+        <view class="search-input">
+            <input type="text" bindinput="bindKeyInput"/>
+           <view class="search-content"> 您查找的内容是：{{inputValue}}</view>
+        </view>
+        <view class="classname">
+            <button size="mini" bindtap="search">完成</button>
+        </view>
+    </view>
+
+    <!--搜索到的结果-->
+     <block wx:for = "{{movies}}">
+        <view class="m-list" bindtap="toDetails" id="{{item.id}}">
+            <view class="m-list-pic">
+                <image src="{{item.images.medium}}" mode="scaleToFill"></image>
+            </view>
+            <view class="m-list-intro">
+         <text>名称：{{item.title}} \n 导演：{{item.director}}\n 演员：{{item.cast}}\n 类型：{{item.genre}} \n上映时间：{{item.year}}</text>
+            </view>
+        </view>
+    </block>
+
+</view>
+
+<view>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>
+

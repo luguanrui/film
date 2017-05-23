@@ -1,0 +1,44 @@
+page{
+    height: 100%;
+}
+.content{
+    background-color: #3a3a3a;
+    min-height: 100%;
+}
+.movie-pic{
+    text-align: center;
+}
+.movie-pic image{
+    width: 100px;
+    height: 160px;
+}
+.summary{
+    padding:5px 10px;
+    margin-bottom: 10px;
+}
+.summary text{
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+}
+.casts-title{
+    text-align: left;
+    color:#fff;
+    margin-bottom: 5px;
+}
+.casts{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.cast-photo image{
+    width: 80px;
+    height: 120px;
+}
+.cast-name{
+    text-align: center;
+}
+.cast-name text{
+    font-size: 23rpx;
+    color:#fff;
+}

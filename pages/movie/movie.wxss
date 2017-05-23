@@ -1,0 +1,29 @@
+/* pages/movie/movie.wxss */
+.content{
+    background-color: #3a3a3a;
+    min-height: 100%;
+}
+.carousel image{
+    width: 100%;
+}
+ .m-list{
+     display: flex;
+     flex-direction: row;
+     align-items:center;
+ }
+ .m-list-pic image{
+     width: 100px;
+     height: 160px;
+ }
+ .m-list-intro{
+     padding-left:10px;
+     color:#fff;
+     font-size:16px;
+     line-height: 25px;
+ }
+ .hr{
+    
+     border: 1px solid #fff;
+ }
+
+ 
