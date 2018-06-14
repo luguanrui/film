@@ -1,7 +1,7 @@
 <view class="content">
 
     <view class="movie-pic">
-        <image src="{{movies.images.medium}}"></image>
+        <image src="{{movies.images.large}}"></image>
     </view>
 
     <!--概要-->
@@ -15,7 +15,7 @@
         <block wx:for="{{casts}}">
             <view class="cast">
                 <view class="cast-photo">
-                    <image src="{{item.avatars.medium}}"></image>
+                    <image src="{{item.avatars.large}}"></image>
                 </view>
                 <view class="cast-name">
                     <text>{{item.name}}</text>

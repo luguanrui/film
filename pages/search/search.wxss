@@ -43,8 +43,11 @@ page{
      align-items:center;
      margin-bottom:2px;
      background-color:#3a3a3a;
+     padding: 2px;
  }
  .m-list-pic image{
+     display: inline-block;
+     vertical-align: top;
      width: 100px;
      height: 160px;
  }

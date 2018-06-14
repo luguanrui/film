@@ -27,7 +27,7 @@ Page({
     var page = this;
     var id = wx.getStorageSync("id")
     wx.request({
-      url:'https://api.douban.com/v2/movie/subject/'+id,
+      url:'http://t.yushu.im/v2/movie/subject/'+id,
       header:{'content-type':'application/x-www-form-urlencoded'},
       success:function(res){
           console.log(res);

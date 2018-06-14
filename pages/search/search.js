@@ -57,7 +57,7 @@ Page({
     var page = this;
     page.setData({hidden:false});
     wx.request({
-      url:'https://api.douban.com/v2/movie/search?q='+txt,
+      url:'http://t.yushu.im/v2/movie/search?q='+txt,
       header:{'content-type':'application/x-www-form-urlencoded'},
       success:function(res){
        var subjects = res.data.subjects;

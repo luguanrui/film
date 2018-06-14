@@ -15,7 +15,7 @@
      <block wx:for = "{{movies}}">
         <view class="m-list" bindtap="toDetails" id="{{item.id}}">
             <view class="m-list-pic">
-                <image src="{{item.images.medium}}" mode="scaleToFill"></image>
+                <image src="{{item.images.large}}" mode="scaleToFill"></image>
             </view>
             <view class="m-list-intro">
          <text>名称：{{item.title}} \n 导演：{{item.director}}\n 演员：{{item.cast}}\n 类型：{{item.genre}} \n上映时间：{{item.year}}</text>

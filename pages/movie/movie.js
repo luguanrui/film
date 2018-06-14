@@ -54,7 +54,7 @@ Page({
   loadMovie:function(){
     var page = this;
     wx.request({
-      url:'https://api.douban.com/v2/movie/in_theaters',
+      url:'http://t.yushu.im/v2/movie/in_theaters',
       header:{'content-type':'application/x-www-form-urlencoded'},
       success:function(res){
        var subjects = res.data.subjects;

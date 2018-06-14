@@ -53,7 +53,7 @@ Page({
   loadMovie:function(){
     var page = this;
     wx.request({
-      url:'https://api.douban.com/v2/movie/top250',
+      url:'http://t.yushu.im/v2/movie/top250',
       header:{'content-type':'application/x-www-form-urlencoded'},
       success:function(res){
        var subjects = res.data.subjects;
