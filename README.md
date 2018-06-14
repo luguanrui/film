@@ -1,7 +1,7 @@
 # 基于豆瓣网的API创建的电影资讯小程序
 
 
-[show](./images/show.gif)
+![show](./images/show.gif)
 
 ## 功能
 
